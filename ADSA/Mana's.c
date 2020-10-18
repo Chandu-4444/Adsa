@@ -3,6 +3,7 @@
 #include <string.h> 
 #include <stdbool.h>
 
+
 #define array_size(a) sizeof(a)/sizeof(a[0])
 #define alphabet_size (26)
 #define char_to_index(c) ( (int)c - (int)'a' )
