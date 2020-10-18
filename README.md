@@ -17,6 +17,8 @@ This is a repo containing all my ADSA Assignments.
 
 - [Depth First Search](https://github.com/Chandu-4444/Adsa/blob/master/ADSA/LA7_S20190010029.c)
 
+- [Breadth First Search and IsBipartite Implementation](https://github.com/Chandu-4444/Adsa/blob/master/ADSA/LA8_S20190010029.c)
+
 
 
 
