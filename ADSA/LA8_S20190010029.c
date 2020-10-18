@@ -155,6 +155,45 @@ void BFS(graph *g, int start)
 	}
 }
 
+void IsBipartite(graph *g, int start)
+{
+	int flag=1;
+	int ColorArr[g->nvertices];
+	for(int i=0;i<g->nvertices;i++)
+	{
+		ColorArr[i] = -1;
+	}
+	ColorArr[start] = 1;
+	Queue[++first] = start;
+	while(first>=0)
+	{
+		int v = Queue[first--];
+		edgenode *p = g->edges[v];
+		while(p)
+		{
+			if(ColorArr[p->y]==-1)
+			{
+				ColorArr[p->y] = (ColorArr[v] == 1)? 0 : 1;
+				Queue[++first]=p->y;
+			}
+			else if(ColorArr[p->y]==ColorArr[v])
+			{
+				flag=0;
+			}
+			p=p->next;
+		}
+	}
+if(flag==0)
+{
+	printf("Not Biapartite\n");
+}
+else
+{
+	printf("Biapartite\n");
+}
+	
+}
+
 void BFSMat(graph *g, int start)
 {
     int v;
@@ -177,13 +216,6 @@ void BFSMat(graph *g, int start)
     }
 
 }
-
-
-
-
-
-
-
 
 int main()
 {
@@ -209,6 +241,6 @@ int main()
     printf("BFS For ADJ Matrix: \n");
     BFSMat(g,n);
     printf("\n");
+    IsBipartite(g, 0);
     return 0;
 }
-
