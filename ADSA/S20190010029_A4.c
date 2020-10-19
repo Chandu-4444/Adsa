@@ -119,7 +119,7 @@ void FixUp(struct TreeNode **root, struct TreeNode *NewNode)
             // (ii) Left Rotate GrandParent
             if( NewNode->parent == NewNode->parent->parent->right && NewNode == NewNode->parent->right && NewNode->parent && NewNode->parent->parent)
             {
-               //Swapping Colors Of Parent And GrandParent
+                //Swapping Colors Of Parent And GrandParent
                 char col = NewNode->parent->color;
                 NewNode->parent->color = NewNode->parent->parent->color;
                 NewNode->parent->parent->color = col;
