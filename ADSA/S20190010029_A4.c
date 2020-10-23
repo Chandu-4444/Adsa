@@ -174,7 +174,7 @@ struct node *deleteNode(struct node *root, int key) {
 }
 
 void InOrder(struct node *root) {
-  if (root != NULL) {
+  if (root != NULL) { 
     InOrder(root->left);
     for (int i = 0; i < root->count; i++)
       printf("%d ", root->key);
