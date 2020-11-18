@@ -19,6 +19,9 @@ This is a repo containing all my ADSA Assignments.
 
 - [Breadth First Search and IsBipartite Implementation](https://github.com/Chandu-4444/Adsa/blob/master/ADSA/LA8_S20190010029.c)
 
+- [Krushkal's Using Adjacency List](https://github.com/Chandu-4444/Adsa/blob/master/ADSA/LA9_S20190010029.c)
+
+
 
 
 
